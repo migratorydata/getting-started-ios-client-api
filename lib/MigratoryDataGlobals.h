@@ -93,6 +93,29 @@ extern NSString *TRANSPORT_HTTP;
 extern NSString *TRANSPORT_WEBSOCKET;
 
 /**
+ * A constant which indicates that the client was authorized to connect using the entitlement token defined on the client side.
+ *
+ * NOTE: This notification applies when using a <tt>Custom</tt> authorization extension built with the
+ * MigratoryData Authorization Extensions API version 2 or later. For the entitlement methods <tt>None</tt>, <tt>Basic</tt>,
+ * or <tt>Custom</tt> authorization extension built with the previous version of the MigratoryData Authorization Extension API,
+ * this notification is always sent no matter the entitlement token is valid or not, the verification of the entitlement
+ * token being made only during subscribe and publish operations.
+ */
+extern NSString *NOTIFY_CONNECT_OK;
+
+/**
+ * A constant which indicates that the client was denied to connect using the entitlement token defined on the client side.
+ *
+ * NOTE: This notification applies when using a <tt>Custom</tt> authorization extension built with the
+ * MigratoryData Authorization Extension API version 2 or later. For the entitlement methods <tt>None</tt>, <tt>Basic</tt>,
+ * or <tt>Custom</tt> authorization extension built with the previous version of the MigratoryData Authorization Extension API,
+ * this notification is never sent no matter the entitlement token is valid or not, the verification of the entitlement
+ * token being made only during subscribe and publish operations.
+ */
+extern NSString *NOTIFY_CONNECT_DENY;
+
+
+/**
  * This class enumerates the MigratoryData logging levels.
  *
  * The available logging levels ordered by verbosity are:

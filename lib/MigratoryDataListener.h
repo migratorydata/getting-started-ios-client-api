@@ -58,6 +58,14 @@
  *        the closure data provided in the detail information of the status notification because the client -- identified with the token given
  *        in the argument of <tt>\link MigratoryDataClient.setEntitlementToken() \endlink</tt> -- is not allowed to publish on the subject of the message
  *
+ * \li \link MigratoryDataClient.NOTIFY_CONNECT_OK \endlink indicates that the client - identified with the
+ * token given in the argument of \link MigratoryDataClient.setEntitlementToken() \endlink - is allowed to connect
+ * for the reason provided by the <tt>info</tt> parameter
+ *
+ * \li \link MigratoryDataClient.NOTIFY_CONNECT_DENY \endlink indicates that the client - identified with the
+ * token given in the argument of \link MigratoryDataClient.setEntitlementToken() \endlink - is denied to connect
+ * for the reason provided by the <tt>info</tt> parameter
+ *
  * \param status The type of the status notification (see the possible values above).
  *
  * \param info The detail information of the status notification.

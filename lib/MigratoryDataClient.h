@@ -175,11 +175,11 @@
 - (void) setEncryption: (BOOL)encryption;
 
 /**
- * Assign an entitlement token to the client.
+ * Assign an entitlement token to the client or update its entitlement token.
  *
  * To define which users of your application have access to which subjects, you will first have to configure the
  * parameter ```Entitlement```, see the <em>Configuration Guide</em>. If you set this parameter on
- * \c Custom, then you can use the <em>MigratoryData Extension SDK for Entitlement</em> to build an extension plugin
+ * \c Custom, then you can use the <em>MigratoryData Authorization Extension</em> to build an extension plugin
  * for the MigratoryData server to allow or deny certain users to subscribe to or publish on certain subjects.
  *
  * \param token  a string representing an entitlement token
