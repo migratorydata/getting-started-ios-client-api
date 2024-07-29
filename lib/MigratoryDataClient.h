@@ -375,4 +375,19 @@
  */
 - (void) setTransport: (NSString *)transport;
 
+/**
+  * This method allows for the inclusion of custom HTTP headers. In the case of the WebSocket transport, the added headers
+ * are transmitted during the handshake. For the HTTP transport, the added headers are sent with every client request.
+ *
+ * This functionality is particularly useful when an authentication solution is in place between the client and the MigratoryData server,
+ * which requires an HTTP header containing an authentication token.
+ *
+ * \remark This method should be used only for Node.js applications.
+ *
+ * \param header header name
+ * \param value header value
+ */
+- (void) setHttpHeader: (NSString *)name value:(NSString *)value;
+
+
 @end

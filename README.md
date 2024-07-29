@@ -13,9 +13,9 @@ You can edit the source code of this example application to connect to Migratory
 
 #### REQUIREMENTS
 
-* MigratoryData server 6.0.1 or later
+* MigratoryData server 6.0.16 or later
 
 #### BUILD REQUIREMENTS
 
- * XCode 6.x or later
- * iOS SDK 8.x or later
+ * XCode 12.x or later
+ * iOS SDK 12.x or later
