@@ -5,7 +5,6 @@
 #import <Foundation/Foundation.h>
 #import "MigratoryDataGlobals.h"
 #import "MigratoryDataListener.h"
-#import "MigratoryDataMonotonicId.h"
 
 @class MigratoryDataListener;
 @class MigratoryPushClientImpl;
@@ -343,27 +342,22 @@
 - (void) setReconnectMaxDelay:(int) seconds;
 
 /**
- * Assign an external token to a client.
+ * Assigns an external token to enable client communication via external services while the client is offline.
  *
- * An external token assigned to a client can be typically used by a plugin of the MigratoryData server implemented
- * with the Presence API to enable the communication of that client with an external service.
+ * Presuming a client goes offline and disconnects from the MigratoryData cluster. Then plugins within the MigratoryData
+ * server, leveraging MigratoryData's Presence API, can utilize this external token to communicate with the offline
+ * client, via external services like push notifications or email.
  *
- * For example, the MigratoryData plugin for Firebase needs an FCM token in order to be able to push notifications
- * via the Firebase service to a mobile client. The mobile client can provide the FCM token to the plugin using this
- * method.
+ * For instance, consider a plugin designed for Firebase Cloud Messaging (FCM), which requires an FCM token to send
+ * push notifications to a client via FCM. Through this method, the client can provide the necessary FCM token to the plugin.
  *
- * To be able to order the online and offline events in the presence plugin, each connection of a client having an
- * external token should be accompanied by a monotonic id. A monotonic id is simply a unique id having at each
- * connection a value higher than the value of the previous connection.
+ * Similarly, consider a plugin designed for email services. To send emails to clients when they're offline, the
+ * plugin requires their email addresses. Clients can provide their email addresses using this method.
  *
- * For iOS applications you can use <code>MigratoryDataUserDefaultsMonotonicId</code>
- * which is a class which provides a monotonic id implementation. The monotonic id is stored in the UserDefaults
- * such that it can tolerate application failures or iOS device restarts.
- *
- * \param externalToken   a token
- * \param monotonicId     an implementation of the MigratoryDataMonotonicId interface
+ * @param externalToken   a token (e.g. FCM token, email address, ...)
  */
-- (void) setExternalToken: (NSString *)externalToken monotonicId:(NSObject<MigratoryDataMonotonicId> *)monotonicId;
+
+- (void) setExternalToken: (NSString *)externalToken;
 
 /**
  * Define the transport type used by the client to communicate with the MigratoryData cluster.

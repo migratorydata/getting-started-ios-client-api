@@ -3,21 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0488FFD62C591A4D00B706AF /* migratorydata-client-ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0488FFD52C591A4D00B706AF /* migratorydata-client-ios.xcframework */; };
+		0488FFD72C591A4D00B706AF /* migratorydata-client-ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0488FFD52C591A4D00B706AF /* migratorydata-client-ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2EDB3D1A1B2C9B5E00144FF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDB3D191B2C9B5E00144FF6 /* main.m */; };
 		2EDB3D251B2C9B5E00144FF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDB3D241B2C9B5E00144FF6 /* Images.xcassets */; };
 		2EDB3D3E1B2C9BBB00144FF6 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EDB3D3D1B2C9BBB00144FF6 /* MainWindow.xib */; };
 		2EDB3D461B2C9BFC00144FF6 /* SampleListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDB3D411B2C9BFC00144FF6 /* SampleListener.m */; };
 		2EDB3D471B2C9BFC00144FF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDB3D431B2C9BFC00144FF6 /* AppDelegate.m */; };
-		2EDB3D491B2C9C9F00144FF6 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 2EDB3D481B2C9C9F00144FF6 /* lib */; };
-		2EDB3D4D1B2C9CC600144FF6 /* lib_migratorydata_client_ios_with_simulator_support.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDB3D4B1B2C9CC600144FF6 /* lib_migratorydata_client_ios_with_simulator_support.a */; };
 		41B82D4E2798712000C8C965 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B82D4D2798712000C8C965 /* Config.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0488FFD82C591A4D00B706AF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0488FFD72C591A4D00B706AF /* migratorydata-client-ios.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0488FFD52C591A4D00B706AF /* migratorydata-client-ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "migratorydata-client-ios.xcframework"; path = "lib/migratorydata-client-ios.xcframework"; sourceTree = "<group>"; };
 		2EDB3D141B2C9B5E00144FF6 /* sample-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sample-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDB3D181B2C9B5E00144FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EDB3D191B2C9B5E00144FF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -27,8 +42,6 @@
 		2EDB3D421B2C9BFC00144FF6 /* SampleListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleListener.h; sourceTree = "<group>"; };
 		2EDB3D431B2C9BFC00144FF6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2EDB3D441B2C9BFC00144FF6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2EDB3D481B2C9C9F00144FF6 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
-		2EDB3D4B1B2C9CC600144FF6 /* lib_migratorydata_client_ios_with_simulator_support.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib_migratorydata_client_ios_with_simulator_support.a; path = lib/lib_migratorydata_client_ios_with_simulator_support.a; sourceTree = "<group>"; };
 		41B82D4D2798712000C8C965 /* Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		41B82D4F2798714300C8C965 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,20 +51,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EDB3D4D1B2C9CC600144FF6 /* lib_migratorydata_client_ios_with_simulator_support.a in Frameworks */,
+				0488FFD62C591A4D00B706AF /* migratorydata-client-ios.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0488FFD42C591A4D00B706AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0488FFD52C591A4D00B706AF /* migratorydata-client-ios.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2EDB3D0B1B2C9B5E00144FF6 = {
 			isa = PBXGroup;
 			children = (
-				2EDB3D4B1B2C9CC600144FF6 /* lib_migratorydata_client_ios_with_simulator_support.a */,
-				2EDB3D481B2C9C9F00144FF6 /* lib */,
 				2EDB3D161B2C9B5E00144FF6 /* sample-client */,
 				2EDB3D151B2C9B5E00144FF6 /* Products */,
+				0488FFD42C591A4D00B706AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +118,7 @@
 				2EDB3D101B2C9B5E00144FF6 /* Sources */,
 				2EDB3D111B2C9B5E00144FF6 /* Frameworks */,
 				2EDB3D121B2C9B5E00144FF6 /* Resources */,
+				0488FFD82C591A4D00B706AF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,7 +168,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EDB3D491B2C9C9F00144FF6 /* lib in Resources */,
 				2EDB3D3E1B2C9BBB00144FF6 /* MainWindow.xib in Resources */,
 				2EDB3D251B2C9B5E00144FF6 /* Images.xcassets in Resources */,
 			);
@@ -191,7 +211,6 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -272,7 +291,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "sample-client/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib",
@@ -290,7 +312,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "sample-client/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib",
