@@ -67,7 +67,7 @@
     }
     
     if (client != nil) {
-        [client dispose];
+        [client disconnect];
         [client release];
         client = nil;
     }
