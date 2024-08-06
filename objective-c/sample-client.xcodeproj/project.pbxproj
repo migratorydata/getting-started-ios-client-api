@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0488FFD62C591A4D00B706AF /* migratorydata-client-ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0488FFD52C591A4D00B706AF /* migratorydata-client-ios.xcframework */; };
-		0488FFD72C591A4D00B706AF /* migratorydata-client-ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0488FFD52C591A4D00B706AF /* migratorydata-client-ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04B2EC2A2C621DC100EB3CC8 /* migratorydata-client-ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B2EC292C621DC100EB3CC8 /* migratorydata-client-ios.xcframework */; };
+		04B2EC2B2C621DC100EB3CC8 /* migratorydata-client-ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04B2EC292C621DC100EB3CC8 /* migratorydata-client-ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2EDB3D1A1B2C9B5E00144FF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDB3D191B2C9B5E00144FF6 /* main.m */; };
 		2EDB3D251B2C9B5E00144FF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDB3D241B2C9B5E00144FF6 /* Images.xcassets */; };
 		2EDB3D3E1B2C9BBB00144FF6 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EDB3D3D1B2C9BBB00144FF6 /* MainWindow.xib */; };
@@ -18,13 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0488FFD82C591A4D00B706AF /* Embed Frameworks */ = {
+		04B2EC2C2C621DC100EB3CC8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0488FFD72C591A4D00B706AF /* migratorydata-client-ios.xcframework in Embed Frameworks */,
+				04B2EC2B2C621DC100EB3CC8 /* migratorydata-client-ios.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,7 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0488FFD52C591A4D00B706AF /* migratorydata-client-ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "migratorydata-client-ios.xcframework"; path = "lib/migratorydata-client-ios.xcframework"; sourceTree = "<group>"; };
+		04B2EC292C621DC100EB3CC8 /* migratorydata-client-ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "migratorydata-client-ios.xcframework"; path = "../lib/migratorydata-client-ios.xcframework"; sourceTree = "<group>"; };
 		2EDB3D141B2C9B5E00144FF6 /* sample-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sample-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDB3D181B2C9B5E00144FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EDB3D191B2C9B5E00144FF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0488FFD62C591A4D00B706AF /* migratorydata-client-ios.xcframework in Frameworks */,
+				04B2EC2A2C621DC100EB3CC8 /* migratorydata-client-ios.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,7 @@
 		0488FFD42C591A4D00B706AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0488FFD52C591A4D00B706AF /* migratorydata-client-ios.xcframework */,
+				04B2EC292C621DC100EB3CC8 /* migratorydata-client-ios.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 				2EDB3D101B2C9B5E00144FF6 /* Sources */,
 				2EDB3D111B2C9B5E00144FF6 /* Frameworks */,
 				2EDB3D121B2C9B5E00144FF6 /* Resources */,
-				0488FFD82C591A4D00B706AF /* Embed Frameworks */,
+				04B2EC2C2C621DC100EB3CC8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
